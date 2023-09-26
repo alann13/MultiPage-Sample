@@ -1,6 +1,7 @@
 ---
 import '@styles/globals.css'
 import MainNav from '@components/main-navigation/MainNav.astro'
+import PageFooter from '@components/page-footer/PageFooter.astro'
 ---
 
 <html lang="en">
@@ -9,19 +10,21 @@ import MainNav from '@components/main-navigation/MainNav.astro'
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
+    <title>Sample Website</title>
   </head>
   <body>
     <MainNav />
     <main>
       <slot />
     </main>
+    <PageFooter />
   </body>
 </html>
 
 <style>
   main {
     margin: auto;
+    margin-bottom: 23.75rem;
     max-width: var(--page-container-size)
   }
 </style>

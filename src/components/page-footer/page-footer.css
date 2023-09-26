@@ -1,0 +1,52 @@
+footer {
+  background-color: var(--black);
+  padding: 9rem 0 5rem;
+}
+
+footer .content-ctn {
+  margin: auto;
+  max-width: var(--page-container-size);
+}
+
+.content-ctn nav {
+  align-items: center;
+  border-bottom: 1px solid hsl(var(--white), 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.content-ctn nav a {
+  color: hsl(var(--white));
+}
+
+nav img {
+  height: 1.7rem;
+  width: 12.5rem;
+}
+
+.lower-footer-ctn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lower-footer-ctn h2 {
+  color: hsl(var(--white), 0.5);
+  font-size: 1rem;
+  letter-spacing: 0;
+  margin-bottom: 0.8rem;
+  text-transform: capitalize;
+}
+
+address,
+tel,
+.footer-email {
+  color: hsl(var(--white), 0.5);
+  line-height: 1.6;
+}
+
+.lower-footer-ctn ul {
+  display: flex;
+  gap: 1rem;
+}

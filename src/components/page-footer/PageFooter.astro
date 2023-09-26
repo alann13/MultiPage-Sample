@@ -1,0 +1,58 @@
+---
+import './page-footer.css'
+import Logo from '@images/shared/desktop/logo-light.png'
+import IconFB from '@images/shared/desktop/icon-facebook.svg'
+import NavLinks from '../nav-links/NavLinks.astro'
+---
+
+<footer>
+  <div class="content-ctn">
+    <nav class="footer-nav">
+      <a href="/">
+        <img src={Logo.src} alt="Site logo" />
+      </a>
+      <NavLinks />
+    </nav>
+
+    <div class="lower-footer-ctn">
+      <section>
+        <h2>designo central office</h2>
+        <address>3886 wellington street<br />Toronto, Ontario M9C 3J5</address>
+      </section>
+      <section>
+        <h2>contact us (central office)</h2>
+        <tel>+1 253-863-8967</tel><br />
+        <a class="footer-email" href="mailto:someone@example.com"
+          >contact@designo.co</a
+        >
+      </section>
+      <ul>
+        <li>
+          <a href="#">
+            <img src={IconFB.src} alt="facebook icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src={IconFB.src} alt="facebook icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src={IconFB.src} alt="facebook icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src={IconFB.src} alt="facebook icon" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src={IconFB.src} alt="facebook icon" />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

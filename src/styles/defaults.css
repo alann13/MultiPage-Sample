@@ -1,6 +1,6 @@
 :root {
   --black: #1d1c1e;
-  ---white: #ffffff;
+  --white: 0, 0%, 100%;
   --peach: #e7816b;
   --light-peach: #ffad9b;
   --dark-grey: #333136;
