@@ -1,0 +1,48 @@
+:root {
+  --black: #1d1c1e;
+  ---white: #ffffff;
+  --peach: #e7816b;
+  --light-peach: #ffad9b;
+  --dark-grey: #333136;
+  --light-grey: #f1f3f5;
+
+  --main-font: 'Jost', sans-serif;
+
+  --page-container-size: 69.375rem;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+h1 {
+  --main-heading-size: 3rem;
+
+  font-size: var(--main-heading-size);
+  line-height: 1;
+}
+
+h2 {
+  --h2-size: 2.5rem;
+
+  font-size: var(--h2-size);
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+h3 {
+  --h3-size: 1.25rem;
+
+  font-size: var(--h3-size);
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.625;
+}
+
+a {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  line-height: 1;
+}

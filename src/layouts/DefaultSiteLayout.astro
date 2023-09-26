@@ -1,5 +1,6 @@
 ---
 import '@styles/globals.css'
+import MainNav from '@components/main-navigation/MainNav.astro'
 ---
 
 <html lang="en">
@@ -11,6 +12,16 @@ import '@styles/globals.css'
     <title>Astro</title>
   </head>
   <body>
-    <slot />
+    <MainNav />
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
+
+<style>
+  main {
+    margin: auto;
+    max-width: var(--page-container-size)
+  }
+</style>

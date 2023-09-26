@@ -1,0 +1,44 @@
+---
+import Logo from '@images/shared/desktop/logo-dark.png'
+---
+
+<nav>
+  <a href="/">
+    <img src={Logo.src} alt="Site logo" />
+  </a>
+  <ul>
+    <li>
+      <a href="/about">our company</a>
+    </li>
+    <li>
+      <a href="/locations">locations</a>
+    </li>
+    <li>
+      <a href="/contact">contact</a>
+    </li>
+  </ul>
+</nav>
+
+<style>
+  nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    max-width: var(--page-container-size);
+  }
+
+  nav img {
+    height: 1.7rem;
+    width: 12.5rem;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 2.6rem;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+  }
+</style>
