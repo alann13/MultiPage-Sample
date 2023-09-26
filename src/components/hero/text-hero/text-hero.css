@@ -1,0 +1,15 @@
+header {
+  background-color: var(--peach);
+  background-image: url('../../../images/web-design/desktop/bg-pattern-intro-web.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  border-radius: 15px;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+}

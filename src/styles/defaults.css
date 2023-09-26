@@ -42,7 +42,18 @@ p {
 }
 
 a {
+  color: var(--dark-grey);
   font-size: 0.875rem;
   letter-spacing: 2px;
   line-height: 1;
+}
+
+header,
+main {
+  margin: auto;
+  max-width: var(--page-container-size);
+}
+
+main {
+  margin-bottom: 23.75rem;
 }

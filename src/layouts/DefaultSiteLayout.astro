@@ -14,17 +14,10 @@ import PageFooter from '@components/page-footer/PageFooter.astro'
   </head>
   <body>
     <MainNav />
+    <slot name="header" />
     <main>
-      <slot />
+      <slot name="main-content" />
     </main>
     <PageFooter />
   </body>
 </html>
-
-<style>
-  main {
-    margin: auto;
-    margin-bottom: 23.75rem;
-    max-width: var(--page-container-size)
-  }
-</style>

@@ -3,5 +3,42 @@ import DefaultSitelayout from '@layouts/DefaultSiteLayout.astro'
 ---
 
 <DefaultSitelayout>
-  <h1>Index Page</h1>
+  <ul class="services-grid" slot="main-content">
+    <li>
+      <a href="/web-design">web design <span>view projects</span></a>
+    </li>
+    <li>
+      <a href="/app-design">app design<span>view projects</span></a>
+    </li>
+    <li>
+      <a href="/graphic-design">graphic design<span>view projects</span></a>
+    </li>
+  </ul>
 </DefaultSitelayout>
+
+<style>
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 19.25rem);
+    gap: 1.875rem;
+    grid-template-areas:
+      'big-slot small-slot'
+      'big-slot small-slot2';
+  }
+
+  .services-grid li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-grid li a {
+    display: flex;
+    height: 100%;
+    place-items: center;
+  }
+
+  .services-grid li:first-child {
+    grid-area: big-slot;
+  }
+</style>

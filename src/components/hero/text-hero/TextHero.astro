@@ -1,0 +1,9 @@
+---
+import './text-hero.css';
+const { pageHeading, heroText } = Astro.props;
+---
+
+<header>
+  <h1>{pageHeading}</h1>
+  <p set:html={heroText}>{heroText}</p>
+</header>

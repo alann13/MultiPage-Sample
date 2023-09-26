@@ -50,3 +50,12 @@ tel,
   display: flex;
   gap: 1rem;
 }
+
+.footer-icon-list {
+  margin-top: auto;
+}
+
+.footer-icon-list img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
