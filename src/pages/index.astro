@@ -1,8 +1,10 @@
 ---
 import DefaultSitelayout from '@layouts/DefaultSiteLayout.astro'
+import MainPageHero from '@components/hero/main-page-hero/MainHero.astro'
 ---
 
 <DefaultSitelayout>
+  <MainPageHero slot="header" />
   <ul class="services-grid" slot="main-content">
     <li>
       <a href="/web-design">web design <span>view projects</span></a>

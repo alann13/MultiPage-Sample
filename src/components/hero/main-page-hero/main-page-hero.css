@@ -1,0 +1,29 @@
+header {
+  background-color: var(--peach);
+  background-image: url('../../../images/home/desktop/bg-pattern-hero-home.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 15px;
+  height: 40rem;
+  margin-bottom: 10rem;
+  padding: 9rem 31rem 0 6rem;
+  position: relative;
+}
+
+.header-text-ctn {
+  color: white;
+}
+
+.header-text-ctn p {
+  margin-block: 1.5rem 2.5rem;
+}
+
+.main-hero-abso-image {
+  height: auto;
+  object-fit: contain;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  width: 27.4rem;
+}

@@ -57,3 +57,22 @@ main {
 main {
   margin-bottom: 23.75rem;
 }
+
+.header-text-ctn a {
+  background-color: white;
+  border-radius: 8px;
+  color: black;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 1.2rem 1.5rem;
+}
+
+@media screen and (max-width: 1110px) {
+  header,
+  main {
+    margin: 0 1%;
+  }
+}
