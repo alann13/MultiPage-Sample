@@ -22,7 +22,6 @@ footer .content-ctn {
 }
 
 nav img {
-  aspect-ratio: 16/9;
   width: 12.5rem;
   object-fit: contain;
 }
