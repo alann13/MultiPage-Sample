@@ -1,0 +1,35 @@
+.contact-cta-box {
+  align-items: center;
+  border-radius: 15px;
+  display: flex;
+  padding: 4.5rem 6rem;
+  justify-content: space-between;
+  background-color: var(--peach);
+  background-image: url('../images/shared/desktop/bg-pattern-call-to-action.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+}
+
+.cta-text-content {
+  color: white;
+  flex-basis: 29rem;
+}
+
+.cta-text-content h2 {
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 56.25rem) {
+  .contact-cta-box {
+    flex-direction: column;
+  }
+
+  .cta-text-content {
+    flex-basis: 0;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}

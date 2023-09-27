@@ -1,0 +1,33 @@
+---
+const { imageSrc, imageAltText, cardHeading, cardText } = Astro.props
+---
+
+<div class="simple-card">
+  <img src={imageSrc} alt={imageAltText} />
+  <p class="simple-card-heading">{cardHeading}</p>
+  <p class="simple-card-text">{cardText}</p>
+</div>
+
+<style>
+  .simple-card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .simple-card > img {
+    height: auto;
+  }
+
+  .simple-card-heading {
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-block: 3rem 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+  }
+
+</style>

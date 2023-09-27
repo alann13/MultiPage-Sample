@@ -15,7 +15,7 @@ import NavLinks from '../nav-links/NavLinks.astro'
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 4rem auto;
+    margin: 4rem var(--page-margin);
     max-width: var(--page-container-size);
   }
 
@@ -31,5 +31,11 @@ import NavLinks from '../nav-links/NavLinks.astro'
 
   nav ul li a {
     text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 70rem) {
+    nav {
+      margin-inline: var(--tablet-page-margin);
+    }
   }
 </style>

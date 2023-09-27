@@ -1,6 +1,7 @@
 ---
 import DefaultSitelayout from '@layouts/DefaultSiteLayout.astro'
 import TextHero from '@components/hero/text-hero/TextHero.astro'
+import ContactCTA from '@components/widgets/contact-cta/ContactCTA.astro'
 ---
 
 <DefaultSitelayout>
@@ -9,4 +10,5 @@ import TextHero from '@components/hero/text-hero/TextHero.astro'
     pageHeading="graphic design"
     slot="header"
   />
+  <ContactCTA slot="main-content" />
 </DefaultSitelayout>

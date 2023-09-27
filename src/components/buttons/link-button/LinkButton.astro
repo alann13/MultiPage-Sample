@@ -1,0 +1,19 @@
+---
+const { linkPath, linkText } = Astro.props
+---
+
+<a class="link-button" href={linkPath}>{linkText}</a>
+
+<style>
+  .link-button {
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 1.2rem 1.5rem;
+  }
+</style>

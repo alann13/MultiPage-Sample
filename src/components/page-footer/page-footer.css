@@ -59,3 +59,9 @@ tel,
   height: 1.5rem;
   width: 1.5rem;
 }
+
+@media screen and (max-width: 70rem) {
+  footer .content-ctn {
+    margin: var(--tablet-page-margin);
+  }
+}

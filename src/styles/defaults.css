@@ -9,6 +9,8 @@
   --main-font: 'Jost', sans-serif;
 
   --page-container-size: 69.375rem;
+  --page-margin: auto;
+  --tablet-page-margin: 4%;
 }
 
 body {
@@ -56,23 +58,24 @@ main {
 
 main {
   margin-bottom: 23.75rem;
+  position: relative;
 }
 
-.header-text-ctn a {
-  background-color: white;
-  border-radius: 8px;
-  color: black;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 1.2rem 1.5rem;
+main > * + * {
+  margin-top: 10rem;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 70rem) {
   header,
   main {
-    margin: 0 1%;
+    margin: 0 var(--tablet-page-margin) 20.6rem;
+  }
+
+  main {
+    margin-bottom: 20rem;
+  }
+
+  main > * + * {
+    margin-top: 5rem;
   }
 }
