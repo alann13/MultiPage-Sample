@@ -36,4 +36,10 @@ import ServicesGrid from '@components/widgets/services-grid/ServicesGrid.astro'
   .simple-card-list > li {
     flex-basis: 21.875rem;
   }
+
+  @media screen and (max-width: 40rem) {
+    .simple-card-list {
+      flex-direction: column;
+    }
+  }
 </style>
