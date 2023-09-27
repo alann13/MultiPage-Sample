@@ -1,6 +1,7 @@
 ---
 import './services-grid.css'
 import WebDesignImage from '@images/home/desktop/image-web-design-large.jpg'
+import WebDesignImageTablet from '@images/home/tablet/image-web-design.jpg'
 import GraphicDesignImage from '@images/home/desktop/image-graphic-design.jpg'
 import AppDesignImage from '@images/home/desktop/image-app-design.jpg'
 ---
@@ -9,6 +10,7 @@ import AppDesignImage from '@images/home/desktop/image-app-design.jpg'
   <li>
     <a href="/web-design">web design<br /> <span>view projects</span></a>
     <picture>
+      <source media="(max-width: 40rem)" srcset={WebDesignImageTablet.src}>
       <img src={WebDesignImage.src} alt="Web design image">
     </picture>
   </li>
