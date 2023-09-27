@@ -51,6 +51,7 @@
   flex-direction: column;
   place-content: center;
   position: absolute;
+  text-align: center;
   width: 100%;
   z-index: 1;
 }

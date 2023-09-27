@@ -23,6 +23,7 @@ footer .content-ctn {
 
 nav img {
   width: 12.5rem;
+  height: auto;
   object-fit: contain;
 }
 

@@ -1,13 +1,19 @@
 ---
 import Logo from '@images/shared/desktop/logo-dark.png'
 import NavLinks from '../nav-links/NavLinks.astro'
+import IconBurger from '@images/shared/mobile/icon-hamburger.svg'
 ---
 
 <nav>
   <a href="/">
-    <img src={Logo.src} alt="Site logo" />
+    <img class="main-nav-logo" src={Logo.src} alt="Site logo" />
   </a>
-  <NavLinks />
+
+  <div class="main-nav-ctn">
+    <NavLinks />
+  </div>
+
+  <img class="menu-icon" src={IconBurger.src} alt="open icon" />
 </nav>
 
 <style>
@@ -19,7 +25,8 @@ import NavLinks from '../nav-links/NavLinks.astro'
     max-width: var(--page-container-size);
   }
 
-  nav img {
+  nav img.main-nav-logo {
+    height: auto;
     width: 12.5rem;
     object-fit: contain;
   }
@@ -33,9 +40,30 @@ import NavLinks from '../nav-links/NavLinks.astro'
     text-transform: uppercase;
   }
 
+  .menu-icon {
+    display: none;
+  }
+
   @media screen and (max-width: 70rem) {
     nav {
       margin-inline: var(--tablet-page-margin);
+    }
+  }
+
+  @media screen and (max-width: 40rem) {
+    nav {
+      margin-block: 2rem;
+    }
+
+    .main-nav-ctn {
+      display: none;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      display: block;
+      width: 1.5rem;
+      height: auto;
     }
   }
 </style>
