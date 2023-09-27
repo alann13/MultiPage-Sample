@@ -4,21 +4,12 @@ import MainPageHero from '@components/hero/main-page-hero/MainHero.astro'
 import SimpleCard from '@components/cards/simple-card/SimpleCard.astro'
 import { contentQualities } from '@content/mainPage'
 import ContactCTA from '@components/widgets/contact-cta/ContactCTA.astro'
+import ServicesGrid from '@components/widgets/services-grid/ServicesGrid.astro'
 ---
 
 <DefaultSitelayout>
   <MainPageHero slot="header" />
-  <ul class="services-grid" slot="main-content">
-    <li>
-      <a href="/web-design">web design<br /> <span>view projects</span></a>
-    </li>
-    <li>
-      <a href="/app-design">app design<span>view projects</span></a>
-    </li>
-    <li>
-      <a href="/graphic-design">graphic design<span>view projects</span></a>
-    </li>
-  </ul>
+  <ServicesGrid slot="main-content" />
   <ul class="simple-card-list" slot="main-content">
     {
       contentQualities.map(({ cardHeading, cardText, imgSrc, imgAltText }) => (
@@ -38,59 +29,6 @@ import ContactCTA from '@components/widgets/contact-cta/ContactCTA.astro'
 </DefaultSitelayout>
 
 <style>
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 19.25rem);
-    gap: 1.875rem;
-    grid-template-areas:
-      'big-slot small-slot'
-      'big-slot small-slot2';
-  }
-
-  .services-grid li {
-    display: flex;
-    justify-content: center;
-  }
-
-  .services-grid li a {
-    color: white;
-    display: flex;
-    font-size: 2.5rem;
-    font-weight: 500;
-    height: 100%;
-    letter-spacing: 2px;
-    place-items: center;
-  }
-
-  .services-grid li:first-child {
-    grid-area: big-slot;
-    background-color: black;
-    filter: brightness(50%);
-    background-image: url('../images/home/desktop/image-web-design-large.jpg');
-    background-size: cover;
-    border-radius: 15px;
-  }
-
-  .services-grid li:nth-child(2) {
-    grid-area: small-slot;
-    background-image: url('../images/home/desktop/image-app-design.jpg');
-    background-size: cover;
-    border-radius: 15px;
-  }
-
-  .services-grid li:last-child {
-    grid-area: small-slot2;
-    background-image: url('../images/home/desktop/image-graphic-design.jpg');
-    background-size: cover;
-    border-radius: 15px;
-  }
-
-  .services-grid li a {
-    flex-direction: column;
-    place-content: center;
-  }
-
   .simple-card-list {
     display: flex;
     gap: 1.875rem;

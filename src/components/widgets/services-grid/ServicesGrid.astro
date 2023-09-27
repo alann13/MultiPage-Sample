@@ -1,0 +1,27 @@
+---
+import './services-grid.css'
+import WebDesignImage from '@images/home/desktop/image-web-design-large.jpg'
+import GraphicDesignImage from '@images/home/desktop/image-graphic-design.jpg'
+import AppDesignImage from '@images/home/desktop/image-app-design.jpg'
+---
+
+<ul class="services-grid" slot="main-content">
+  <li>
+    <a href="/web-design">web design<br /> <span>view projects</span></a>
+    <picture>
+      <img src={WebDesignImage.src} alt="haha">
+    </picture>
+  </li>
+  <li>
+    <a href="/app-design">app design<span>view projects</span></a>
+    <picture>
+      <img src={GraphicDesignImage.src} alt="haha">
+    </picture>
+  </li>
+  <li>
+    <a href="/graphic-design">graphic design<span>view projects</span></a>
+    <picture>
+      <img src={AppDesignImage.src} alt="haha">
+    </picture>
+  </li>
+</ul>
