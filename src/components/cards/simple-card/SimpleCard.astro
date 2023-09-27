@@ -27,7 +27,11 @@ const { imageSrc, imageAltText, cardHeading, cardText } = Astro.props
     margin-block: 3rem 2rem;
     letter-spacing: 5px;
     text-transform: uppercase;
-
   }
 
+  @media screen and (max-width: 40rem) {
+    .simple-card-heading {
+      margin-block: 2rem 1rem;
+    }
+  }
 </style>

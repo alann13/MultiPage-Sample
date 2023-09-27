@@ -91,4 +91,8 @@ tel,
   .lower-footer-ctn > * + * {
     margin-top: 1.2rem;
   }
+
+  .footer-icon-list {
+    margin-top: 2rem;
+  }
 }
