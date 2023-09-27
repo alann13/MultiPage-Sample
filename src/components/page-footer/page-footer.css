@@ -65,3 +65,30 @@ tel,
     margin: var(--tablet-page-margin);
   }
 }
+
+@media screen and (max-width: 40rem) {
+  .content-ctn .footer-nav {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .content-ctn .footer-nav > a {
+    margin-bottom: 2rem;
+  }
+
+  .content-ctn nav .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .lower-footer-ctn {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lower-footer-ctn > * + * {
+    margin-top: 1.2rem;
+  }
+}
