@@ -1,0 +1,40 @@
+.hover-card:hover figcaption {
+  transition: all 0.3s;
+  background-color: var(--peach);
+}
+
+.hover-card:hover figcaption p {
+  transition: all 0.3s;
+  color: white;
+}
+
+.hover-card figcaption {
+  background-color: var(--light-peach);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  bottom: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hover-card img {
+  aspect-ratio: 350/320;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+
+.hover-card .text-content-card-heading {
+  color: var(--peach);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 5px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.hover-card p:not(.text-content-card-heading) {
+  color: var(--dark-grey);
+  line-height: 1.6;
+}

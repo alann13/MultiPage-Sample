@@ -2,6 +2,9 @@
 import DefaultSitelayout from '@layouts/DefaultSiteLayout.astro'
 import TextHero from '@components/hero/text-hero/TextHero.astro'
 import ContactCTA from '@components/widgets/contact-cta/ContactCTA.astro'
+import HoverCard from '@components/cards/hover-card/HoverCard.astro'
+import { appDesignProjects } from '@content/app-design-page'
+import '@styles/utils.css'
 ---
 
 <DefaultSitelayout>
@@ -10,5 +13,20 @@ import ContactCTA from '@components/widgets/contact-cta/ContactCTA.astro'
     pageHeading="app design"
     slot="header"
   />
+  <ul class="simple-grid" slot="main-content">
+    {
+      appDesignProjects.map(
+        ({ captionHeading, captionText, imageAlt, imageSrc }) => (
+          <HoverCard
+            imageAlt={imageAlt}
+            imageSrc={imageSrc}
+            captionHeading={captionHeading}
+            captionText={captionText}
+          />
+        )
+      )
+    }
+  </ul>
+
   <ContactCTA slot="main-content" />
 </DefaultSitelayout>

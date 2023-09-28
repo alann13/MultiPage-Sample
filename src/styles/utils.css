@@ -1,0 +1,5 @@
+.simple-grid {
+  display: grid;
+  gap: 1.875rem;
+  grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
+}

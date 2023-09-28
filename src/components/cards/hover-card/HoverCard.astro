@@ -1,0 +1,12 @@
+---
+import './hover-card.css'
+const {imageSrc, imageAlt, captionHeading, captionText} = Astro.props
+---
+
+<figure class="hover-card">
+  <img src={imageSrc} alt={imageAlt} />
+  <figcaption>
+    <p class="text-content-card-heading">{captionHeading}</p>
+    <p>{captionText}</p>
+  </figcaption>
+</figure>
